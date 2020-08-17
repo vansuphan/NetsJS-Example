@@ -11,7 +11,10 @@ export class UserControllerController {
     @Render('index')
     root(){
         return {
-            message : "hi user"
+            people: [
+                { firstname: "Nils" },
+                { firstname: "Yehuda" },
+            ],
         };
     }
 }
