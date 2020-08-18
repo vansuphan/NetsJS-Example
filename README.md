@@ -48,7 +48,10 @@ $ nest generate controller user-controller
 ```
 Provider là service cho user module
 - Class UserModule được import vào AppModule (root)
-File user controller đóng vai trò như một router trong ExpressJS. Trong đó, ‘user-controler’ là route name , @Get là method GET và getUser là hàm xử lý request .Class UserService được inject vào trong constructor và được gọi trong hàm getUser.
+- File user controller đóng vai trò như một router trong ExpressJS. 
+- Trong đó, ‘user-controler’ là route name , 
+- @Get là method GET và getUser là hàm xử lý request.
+- Class UserService được inject vào trong constructor và được gọi trong hàm getUser.
 ## Running the app
 
 ```bash
