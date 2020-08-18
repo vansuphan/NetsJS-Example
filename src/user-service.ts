@@ -1,8 +1,15 @@
-import { Injectable } from '@nestjs/common';
+import { Get, Injectable, Post } from '@nestjs/common';
 
 @Injectable()
 export class UserService {
-    getUser() : number {
-        return 134552;
+    @Get()
+    getUser() : string {
+        // console.log("this is action get user");
+        return "this is action get user";
     }
+    @Post()
+    createUSer() : string {
+        return "This is action create user";
+    }
+
 }
