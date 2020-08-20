@@ -183,9 +183,5 @@
 
     fixedContentPos: false
   });
-
-
-
-
 })(jQuery);
 

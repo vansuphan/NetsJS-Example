@@ -34,6 +34,14 @@
 $ npm install
 ```
 
+## Configure DOTENV
+
+```bash
+$ PORT=<Port-Run>
+$ STRING_CONNECT_MONGO=<String>
+$ ex: String="mongodb://localhost:27017/db-nest"
+```
+
 ## CLI example basic 
 
 ```bash
