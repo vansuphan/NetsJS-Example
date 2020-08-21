@@ -14,6 +14,5 @@ export class LoginModule {
     consumer
       .apply(AuthLoginMiddleware)
       .forRoutes('/login');
-
   }
 }
