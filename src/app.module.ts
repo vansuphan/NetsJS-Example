@@ -9,9 +9,10 @@ import { Users } from './users';
 import { LoggerMiddleware } from './logger.middleware';
 import { LoginModule } from './login/login.module';
 // import { AuthLoginMiddleware } from './auth-login.middleware'
+import { AuthModule } from './auth/auth.module';
 
 @Module({
-  imports: [UserModuleModule, UsersModule, LoginModule],
+  imports: [UserModuleModule, UsersModule, LoginModule, AuthModule],
   controllers: [AppController, UserControllerController],
   providers: [AppService, UserService, Users],
 })
