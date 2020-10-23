@@ -1,6 +1,6 @@
 import { Controller, Get, Query, Post, Body, Put, Param, Delete } from '@nestjs/common';
 
-@Controller('users')
+@Controller('user')
 export class UsersController {
     @Get()
     findAll(): string{
@@ -21,10 +21,10 @@ export class UsersController {
         return `This action returns a #${id} cat`;
     }
 
-    // @Put(':id')
-    // update(@Param('id') id: string, @Body() updateCatDto: UpdateCatDto) {
-    //     return `This action updates a #${id} cat`;
-    // }
+    @Put(':id')
+    update(@Param('id') id: string) {
+        return `This action updates a #${id} cat`;
+    }
 
     @Delete(':id')
     remove(@Param('id') id: string) {

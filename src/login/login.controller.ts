@@ -14,11 +14,12 @@ export class LoginController {
    
     @Post()
     postUser () : any {
+        console.log("post login")
         return this.services.potsLogin()
     }
 
-    @Get("/user")
-    getUser(){
-        return this.services.getUSer();
-    }
+    // @Get("/user")
+    // getUser(){
+    //     return this.services.getUSer();
+    // }
 }
